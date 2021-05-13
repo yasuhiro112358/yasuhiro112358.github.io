@@ -1,5 +1,153 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(16, 16, 16); */
+    background-color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: rgb(16, 16, 16);
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(64, 64, 64);
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 500px;
+    /* height: 36px; */
+    justify-content: space-between;
+}
+
+nav a {
+    background-color: rgb(64, 64, 64);
+    color:gray;
+    text-decoration: none;
+    /* width: 100px; */
+    text-align: center;
+    line-height: 45px;
+    /* line-height: 100px; */
+    display: block;
+    transition-property: color;
+    transition-duration: 0.3;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    margin: 0;
+    padding: 0 32px;
+}
+
+
 h1 {
     font-size: 24px;
     padding-bottom: 8px;
     border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+h1 .capital {
+    color: crimson;
+}
+
+/* ---------------- */
+
+
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50px;
+    height: 30px;
+    padding: 16px 32px 10px 32px;
+    text-align: center;
+    vertical-align: bottom;
+    background-color: hsl(180, 80%, 40%);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: hsl(180, 80%, 50%);
+    color: hsl(0, saturation, lightness);
+}
+
+.loading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 70%);
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 1.0s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.message {
+    width: 300px;
+    padding: 8px 16px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(200, 200, 200);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgb(180, 180, 180);
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+
+    animation: popup 2s forwards;
+
+}
+
+@keyframes popup {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        transform: none;
+        opacity: 1;
+    }
+    80% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0;
+        pointer-events: none;
+    }
 }
