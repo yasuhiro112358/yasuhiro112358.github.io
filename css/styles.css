@@ -14,11 +14,6 @@ body {
     color: rgb(16, 16, 16);
 }
 
-/* header {
-    margin: 0;
-    padding: 0;
-} */
-
 
 /* 通常時メニュー（携帯端末） */
 .nav-menu {
@@ -130,55 +125,6 @@ body {
     transition-delay: 0.5s;
 }
 
-
-
-
-
-
-/* .overlay #close {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 32px;
-    line-height: 64px;
-    color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-} */
-
-
-
-
-
-/* 旧スタイル（ナビゲーション） */
-/* nav ul {
-    list-style: none;
-    display: flex;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    width: 500px;
-    justify-content: space-between;
-}
-
-nav a {
-    background-color: rgb(64, 64, 64);
-    color:gray;
-    text-decoration: none;
-    text-align: center;
-    line-height: 45px;
-    display: block;
-    transition-property: color;
-    transition-duration: 0.3;
-}
-
-nav a:hover {
-    color: white;
-} */
-/* ==================================== */
-
-
-
 /* main */
 main {
     margin: 0;
@@ -197,23 +143,70 @@ h1 .capital {
 }
 
 
+/* -------------------------------------------- */
 
-
+.pc-menu {
+    display: none;
+}
 
 /* medium screen */
 @media (min-width: 600px) {
+    /* スマートフォン用メニューを消す */
+    .sp-menu {
+        display: none;
+    }
 
+    /* ロゴを左寄せ */
+    .logo {
+        margin: 0;
+    }
+
+    .pc-menu {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    .pc-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pc-menu a {
+        display: block;
+        color: rgba(192, 192, 192, 1);
+        text-decoration: none;
+        text-align: center;
+        width: 64px;
+        line-height: 64px;
+        transition: color 0.3s;
+    }
+    .pc-menu a:hover{
+        color: rgba(255, 255, 255, 1);
+    }
 }
  
 /* large screen */
 @media (min-width: 800px) {
-
+    .nav-menu {
+        /* width: 800px; */
+        padding-left: calc((100% - 800px) / 2);
+        padding-right: calc((100% - 800px) / 2);
+    }
 }
+
+
+
 
 
 
 
 /* etc... */
+/* testing... */
 
 .btn {
     margin-top: 30px;
