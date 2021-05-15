@@ -21,6 +21,9 @@
         overlayMain.classList.remove('show');
         open.classList.remove('hide');
     });
+
+    
+    // ウィンドウの幅が６００に達するとshowクラスをremoveするコードを書きたい
     
 
 }
