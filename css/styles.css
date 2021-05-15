@@ -1,3 +1,6 @@
+/* common */
+/* small screen */
+
 html {
     margin: 0;
     padding: 0;
@@ -6,24 +9,148 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /* background-color: rgb(16, 16, 16); */
+    font-family: Verdana, sans-serif;
     background-color: rgb(255, 255, 255);
-    /* color: rgb(255, 255, 255); */
     color: rgb(16, 16, 16);
 }
 
-header {
+/* header {
     margin: 0;
     padding: 0;
+} */
+
+
+/* 通常時メニュー（携帯端末） */
+.nav-menu {
+    margin: 0;
+    padding: 0 16px;
+    display: flex;
     background-color: rgb(64, 64, 64);
 }
 
-nav {
+.sp-menu {
     margin: 0;
     padding: 0;
+    width: 32px;
+}
+.sp-menu #open {
+    font-size: 32px;
+    line-height: 64px;
+    color: rgba(192, 192, 192, 1);
+    cursor: pointer;
+} 
+.sp-menu #open.hide {
+    display: none;
 }
 
-nav ul {
+.logo {
+    margin: 0;
+    padding: 0;
+    margin-left: calc((100% - 100px) / 2 - 32px);
+}
+.logo h1 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    font-size: 24px;
+    line-height: 64px;
+    text-align: center;
+    color: rgba(192, 192, 192, 1);
+}
+
+
+/* オーバーレイ時メニュー（携帯端末） */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;  
+    background-color: rgba(0, 0, 0, 1.00);
+    /* background-color: rgba(0, 0, 0, 0.90); */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+}
+/* オーバーレイの動作 */
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlay-header {
+    margin: 0;
+    padding: 0 16px;
+    display: flex;
+}
+
+.sp-menu #close {
+    font-size: 32px;
+    line-height: 64px;
+    color: rgba(192, 192, 192, 1);
+    cursor: pointer;
+} 
+
+.overlay-main {
+    margin: 0;
+    padding: 0 16px;
+}
+.overlay-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 40px;
+}
+.overlay-main li {
+    padding: 16px 0;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: rgba(192, 192, 192, 1);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+.overlay-main.show li {
+    opacity: 1;
+    transform: none;
+}
+.overlay-main.show li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+.overlay-main.show li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.overlay-main.show li:nth-child(3) {
+    transition-delay: 0.3s;
+}
+.overlay-main.show li:nth-child(4) {
+    transition-delay: 0.4s;
+}
+.overlay-main.show li:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+/* .overlay #close {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 32px;
+    line-height: 64px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+} */
+
+
+
+
+
+/* 旧スタイル（ナビゲーション） */
+/* nav ul {
     list-style: none;
     display: flex;
     margin-top: 0;
@@ -31,7 +158,6 @@ nav ul {
     margin-right: auto;
     padding: 0;
     width: 500px;
-    /* height: 36px; */
     justify-content: space-between;
 }
 
@@ -39,10 +165,8 @@ nav a {
     background-color: rgb(64, 64, 64);
     color:gray;
     text-decoration: none;
-    /* width: 100px; */
     text-align: center;
     line-height: 45px;
-    /* line-height: 100px; */
     display: block;
     transition-property: color;
     transition-duration: 0.3;
@@ -50,15 +174,18 @@ nav a {
 
 nav a:hover {
     color: white;
-}
+} */
+/* ==================================== */
 
+
+
+/* main */
 main {
     margin: 0;
     padding: 0 32px;
 }
 
-
-h1 {
+main h1 {
     font-size: 24px;
     padding-bottom: 8px;
     border-bottom: 1px solid gray;
@@ -69,9 +196,24 @@ h1 .capital {
     color: crimson;
 }
 
-/* ---------------- */
 
 
+
+
+/* medium screen */
+@media (min-width: 600px) {
+
+}
+ 
+/* large screen */
+@media (min-width: 800px) {
+
+}
+
+
+
+
+/* etc... */
 
 .btn {
     margin-top: 30px;
