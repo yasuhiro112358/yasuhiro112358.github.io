@@ -1,87 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yasuhiro WATANABE</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- https://icons.getbootstrap.com/ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- マテリアルアイコンの導入 -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
-        
-        <header></header>
-        
-        <!-- ナビメニュー（通常時） -->
-        <nav class="nav-menu">
-            <div class="sp-menu">            
-                <span class="material-icons" id="open">menu</span>
-            </div>
-            
-            <div class="logo">
-                <h1>LOGO</h1>
-            </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yasuhiro WATANABE</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
 
-            <div class="pc-menu">
-                <div>
-                    <ul>
-                        <li><a href="">alpha</a></li>
-                        <li><a href="">beta</a></li>
-                        <li><a href="">gamma</a></li>
-                        <li><a href="">delta</a></li>
-                        <li><a href="">epsilon</a></li>
-                    </ul>
-                </div>
-            </div>   
-        </nav>
-        
-        <!-- ナビメニュー（オーバーレイ時） -->
-        <nav class="overlay">
-            <div class="overlay-header">
-                <div class="sp-menu">            
-                    <span class="material-icons" id="close">close</span>
-                </div>
-                        
-                <div class="logo">
-                    <h1>LOGO</h1>
-                </div>
-            </div>
-            
-            <div class="overlay-main">
-                <ul>
-                    <li><a href="">alpha</a></li>
-                    <li><a href="">beta</a></li>
-                    <li><a href="">gamma</a></li>
-                    <li><a href="">delta</a></li>
-                    <li><a href="">epsilon</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- ======================================= -->
+  <body class="bg-secondary">
+    <header>
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-github"></i>
+            Yasuhiro W
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <main>
-            <h1><span class="capital">Y</span>asuhiro <span class="capital">W</span>ATANABE</h1>
-            <p>プログラミング技術のブラッシュアップをしています。<br><br>
-                Githubへの接続テスト中…<br><br>
-                Pythonはじめました。</p>
-            <p>更新の準備中</p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="contact.html">Contact</a></p>
-            
+    <div class="container p-0 mt-3 mb-3">
+      <div class="row p-0 m-0">
+        <div class="col-md-4 p-0 bg-light">
+          <div class="p-3 bg-light">
+            <h1 class="fs-3 border-bottom">Hello World!</h1>
+            <p class="ps-4">Hi, I'm Yasuhiro.<br>
+              After building a career in the railway construction industry, I am brushing up on programming for a career change to the IT industry.<br>
+              Additionally, I can handle English and Japanese translation tasks, so please let me know if you need any!</p>
+          </div>
+        </div>
+        <div class="col-md-8 p-0">
+          <div class="p-3 bg-light">
+            <h1 class="fs-3 border-bottom">Experience</h1>
+            <ul>
+              <li>Developed a program for the time-history vibration analysis of buildings (MATLAB, Fortran)</li>
+              <li>Created automation programs for office tasks (VBA)</li>
+              <li>Lived in Sydney, Australia for a year for:</li>
+              <li>Research on effective and efficient English learning methods using SRS (Spaced Repetition System)</li>
+              <li>Research on English learning methods using generative AI</li>
+            </ul>
+          </div>
+          <div class="p-3 bg-light">
+            <h1 class="fs-3 border-bottom">Learning</h1>
+            <ul>
+              <li>Ruby</li>
+              <li>Ruby on Rails</li>
+              <li>MySQL</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="text-center p-3 border-top bg-light">
+      Copyright © 2024 Yasuhiro WATANABE All rights reserved.
+    </footer>
 
-            <div class="box"></div>
-        
-        </main>
-
-        <script src="js/script.js"> </script>
-        
-        <!-- <div class="btn">OK</div> -->
-        
-        <!-- <div class="loading"></div> -->
-        
-        <!-- <div class="message">message</div> -->
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
