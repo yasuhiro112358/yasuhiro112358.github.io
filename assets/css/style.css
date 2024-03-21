@@ -133,6 +133,44 @@ a {
   padding-top: 6rem;
 }
 
+#contact .container {
+  padding-top: 6rem;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+  padding: 1rem;
+  background-color: gray;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.github {
+  background-color: #000000;
+}
+
+.linkedin {
+  background-color: #0966C2;
+}
+
+.twitter {
+  background-color: #000000;
+}
+
+.freelancer {
+  background-color: #28B2FE;
+}
+
+.upwork {
+  background-color: #14A800;
+}
+
+.crowdworks {
+  background-color: #0168B8;
+}
+
 
 .footer {
   z-index: 1000;
