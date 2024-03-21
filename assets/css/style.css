@@ -121,6 +121,19 @@ a {
   margin-bottom: 0.5rem;
 }
 
+#portfolio .container {
+  padding-top: 6rem;
+}
+
+#portfolio a {
+  text-decoration: underline;
+}
+
+#about .container {
+  padding-top: 6rem;
+}
+
+
 .footer {
   z-index: 1000;
   background-color: navy;
