@@ -100,7 +100,7 @@ a {
   font-size: 1.5rem;
   border-bottom: 0.15rem solid navy;
   padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.0rem;
 }
 
 /* Content */
@@ -118,7 +118,7 @@ a {
   list-style-type: "- ";
   list-style-position: outside;
   margin-left: 1rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 #portfolio .container {
@@ -126,16 +126,38 @@ a {
 }
 
 #portfolio a {
+  display: inline-block;
   text-decoration: underline;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
+
+#portfolio p {
+  margin-bottom: 1.5rem;
+}
+
+#portfolio span {
+  font-weight: bold;
+}
+
 
 #about .container {
   padding-top: 6rem;
 }
 
+#about p {
+  margin-bottom: 1rem;
+}
+
 #contact .container {
   padding-top: 6rem;
 }
+
+#contact p {
+  margin-bottom: 1rem;
+}
+
+
 
 .btn {
   display: block;
@@ -171,6 +193,9 @@ a {
   background-color: #0168B8;
 }
 
+.myblog {
+  background-color: #00749b;
+}
 
 .footer {
   z-index: 1000;
