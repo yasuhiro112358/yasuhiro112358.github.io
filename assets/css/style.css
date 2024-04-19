@@ -1,4 +1,4 @@
-/* General Settings */
+/* ==== General Settings ==== */
 * {
   box-sizing: border-box;
 }
@@ -19,16 +19,27 @@ a {
   color: inherit;
 }
 
-.container {
-  /* width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  padding: 0 2rem;
-  margin: 0 auto; */
+/* .container */
+.container.container-under-nav {
+  padding-top: 5rem;
 }
 
+/* .card .card-body */
+.card .card-body hr {
+  border-color: navy;
+  opacity: 1;
+}
 
-/* Settings */
+.card .card-body li {
+  list-style-type: "- ";
+  list-style-position: outside;
+}
+
+/* Heading */
+.heading hr {
+  border-color: navy;
+  opacity: 1;
+}
 
 /* Navbar */
 nav.navbar {
@@ -38,195 +49,13 @@ nav.navbar {
   z-index: 10;
 }
 
-
-
-
-
-.header {
-  /* background-color: navy;
-  color: white;
-  position: fixed;
-  z-index: 10;
-  width: 100%; */
+/* Footer */
+.footer-container {
+  z-index: 1000;
+  background-color: navy;
 }
 
-.header .container {
-  /* display: flex;
-  justify-content: space-between; */
-}
-
-.header .logo {
-  /* font-size: 1.5rem;
-  line-height: 4rem; */
-}
-
-.logo a {
-  /* display: block; */
-}
-
-.header .navigation {
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* line-height: 4rem; */
-}
-
-.header li {
-  /* text-align: center; */
-  /* padding: 0 1rem; */
-  /* background-color: navy;
-  opacity: 0.7; */
-}
-
-.navigation li:hover {
-  /* opacity: 1.0;
-  transition: all 0.5s;
-  background-color: darkslateblue; */
-}
-
-.navigation a {
-  /* display: block;
-  padding: 0 1rem; */
-}
-
-.header .menu-icon {
-  /* display: none; */
-}
-
-
-
-
-/* Banner */
-.banner-image {
-  height: 300px;
-  background-image: url("../images/sydney.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.banner-text h2 {
-  text-shadow: 4px 4px 6px black;
-}
-
-
-.top {
-  /* height: 25rem;
-  margin-bottom: 2rem;
-  background-image: url("../images/sydney.jpg");
-  background-position: center;
-  background-size: cover; */
-}
-
-.top h1 {
-  /* font-size: 3rem;
-  padding-top: 12rem;
-  color: white;
-  text-align: center;
-  text-shadow: 0.25rem 0.25rem 0.25rem black; */
-}
-
-
-
-/* Heading */
-.heading {
-  /* font-size: 1.5rem;
-  border-bottom: 0.15rem solid navy;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.0rem; */
-}
-
-/* Content */
-
-/* .card .card-body h4.card-title.border.border-top-0.border-start-0.border-end-0.border-3 {
-  border-color: navy;
-} */
-
-/* 共通設定 */
-.card .card-body hr {
-  border-color: navy;
-  opacity: 1;
-}
-
-/* 共通設定 */
-.heading hr {
-  border-color: navy;
-  opacity: 1;
-}
-
-
-.content {
-  /* margin-bottom: 2rem; */
-}
-
-.content p {
-  /* line-height: 1.2rem;
-  margin-bottom: 0.5rem; */
-}
-
-/* 共通設定 */
-.card .card-body li {
-  list-style-type: "- ";
-  list-style-position: outside;
-}
-
-
-/* ==== Portfolio Page ==== */
-
-/* 共通設定に移動 */
-.container.container-under-nav {
-  padding-top: 5rem;
-}
-
-/* #portfolio a {
-  display: inline-block;
-  text-decoration: underline;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-#portfolio p {
-  margin-bottom: 1.5rem;
-}
-
-#portfolio span {
-  font-weight: bold;
-} */
-
-
-
-
-/* ==== About Page ==== */
-#about .container {
-  /* padding-top: 6rem; */
-}
-
-#about p {
-  /* margin-bottom: 1rem; */
-}
-
-
-/* ==== Contact Page ==== */
-
-#contact .container {
-  /* padding-top: 6rem; */
-}
-
-#contact p {
-  /* margin-bottom: 1rem; */
-}
-
-
-
-.btn {
-  /* display: block;
-  width: 100%;
-  max-width: 20rem;
-  padding: 1rem;
-  background-color: gray;
-  color: white;
-  font-size: 1.2rem; */
-}
-
-/* 共通設定 */
+/* SNS Link Color */
 .github {
   background-color: #000000;
 }
@@ -256,25 +85,28 @@ nav.navbar {
 }
 
 
-/* Footer */
-.footer {
-  /* z-index: 1000;
-  background-color: navy;
-  color: white;
-  text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem; */
+/* ==== Index Page ==== */
+
+/* Banner */
+.banner-image {
+  height: 300px;
+  background-image: url("../images/sydney.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.footer-container {
-  z-index: 1000;
-  background-color: navy;
+.banner-text h2 {
+  text-shadow: 4px 4px 6px black;
 }
 
 
+/* ==== Portfolio Page ==== */
 
 
-/* Hamburger Menu */
+/* ==== Contact Page ==== */
+
+
+/* ==== Overlay Menu ==== */
 .overlay {
   position: fixed;
   z-index: 100;
