@@ -128,10 +128,10 @@ nav.navbar {
 
 /* Heading */
 .heading {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem;
   border-bottom: 0.15rem solid navy;
   padding-bottom: 0.5rem;
-  margin-bottom: 1.0rem;
+  margin-bottom: 1.0rem; */
 }
 
 /* Content */
@@ -140,7 +140,14 @@ nav.navbar {
   border-color: navy;
 } */
 
+/* 共通設定 */
 .card .card-body hr {
+  border-color: navy;
+  opacity: 1;
+}
+
+/* 共通設定 */
+.heading hr {
   border-color: navy;
   opacity: 1;
 }
@@ -155,16 +162,21 @@ nav.navbar {
   margin-bottom: 0.5rem; */
 }
 
+/* 共通設定 */
 .card .card-body li {
   list-style-type: "- ";
   list-style-position: outside;
 }
 
-#portfolio .container {
-  padding-top: 6rem;
+
+/* ==== Portfolio Page ==== */
+
+/* 共通設定に移動 */
+.container.container-under-nav {
+  padding-top: 5rem;
 }
 
-#portfolio a {
+/* #portfolio a {
   display: inline-block;
   text-decoration: underline;
   margin-bottom: 1rem;
@@ -177,9 +189,12 @@ nav.navbar {
 
 #portfolio span {
   font-weight: bold;
-}
+} */
 
 
+
+
+/* ==== About Page ==== */
 #about .container {
   padding-top: 6rem;
 }
