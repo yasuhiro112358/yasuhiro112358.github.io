@@ -20,80 +20,111 @@ a {
 }
 
 .container {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
   max-width: 1200px;
   padding: 0 2rem;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 
 /* Settings */
-.header {
+
+/* Navbar */
+nav.navbar {
   background-color: navy;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+
+
+
+
+.header {
+  /* background-color: navy;
   color: white;
   position: fixed;
   z-index: 10;
-  width: 100%;
+  width: 100%; */
 }
 
 .header .container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .header .logo {
-  font-size: 1.5rem;
-  line-height: 4rem;
+  /* font-size: 1.5rem;
+  line-height: 4rem; */
 }
 
 .logo a {
-  display: block;
+  /* display: block; */
 }
 
 .header .navigation {
-  display: flex;
-  justify-content: flex-end;
-  line-height: 4rem;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* line-height: 4rem; */
 }
 
 .header li {
-  text-align: center;
+  /* text-align: center; */
   /* padding: 0 1rem; */
-  background-color: navy;
-  opacity: 0.7;
+  /* background-color: navy;
+  opacity: 0.7; */
 }
 
 .navigation li:hover {
-  opacity: 1.0;
+  /* opacity: 1.0;
   transition: all 0.5s;
-  background-color: darkslateblue;
+  background-color: darkslateblue; */
 }
 
 .navigation a {
-  display: block;
-  padding: 0 1rem;
+  /* display: block;
+  padding: 0 1rem; */
 }
 
 .header .menu-icon {
-  display: none;
+  /* display: none; */
 }
 
-.top {
-  height: 25rem;
-  margin-bottom: 2rem;
+
+
+
+/* Banner */
+.banner-image {
+  height: 300px;
   background-image: url("../images/sydney.jpg");
   background-position: center;
   background-size: cover;
 }
 
+.banner-text h2 {
+  text-shadow: 4px 4px 6px black;
+}
+
+
+.top {
+  /* height: 25rem;
+  margin-bottom: 2rem;
+  background-image: url("../images/sydney.jpg");
+  background-position: center;
+  background-size: cover; */
+}
+
 .top h1 {
-  font-size: 3rem;
+  /* font-size: 3rem;
   padding-top: 12rem;
   color: white;
   text-align: center;
-  text-shadow: 0.25rem 0.25rem 0.25rem black;
+  text-shadow: 0.25rem 0.25rem 0.25rem black; */
 }
+
+
 
 /* Heading */
 .heading {
@@ -104,21 +135,29 @@ a {
 }
 
 /* Content */
+
+/* .card .card-body h4.card-title.border.border-top-0.border-start-0.border-end-0.border-3 {
+  border-color: navy;
+} */
+
+.card .card-body hr {
+  border-color: navy;
+  opacity: 1;
+}
+
+
 .content {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .content p {
-  line-height: 1.2rem;
-  margin-bottom: 0.5rem;
+  /* line-height: 1.2rem;
+  margin-bottom: 0.5rem; */
 }
 
-.content li {
-  line-height: 1.2rem;
+.card .card-body li {
   list-style-type: "- ";
   list-style-position: outside;
-  margin-left: 1rem;
-  /* margin-bottom: 0.5rem; */
 }
 
 #portfolio .container {
@@ -160,13 +199,13 @@ a {
 
 
 .btn {
-  display: block;
+  /* display: block;
   width: 100%;
   max-width: 20rem;
   padding: 1rem;
   background-color: gray;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2rem; */
 }
 
 .github {
@@ -197,14 +236,24 @@ a {
   background-color: #00749b;
 }
 
+
+/* Footer */
 .footer {
-  z-index: 1000;
+  /* z-index: 1000;
   background-color: navy;
   color: white;
   text-align: center;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem; */
 }
+
+.footer-container {
+  z-index: 1000;
+  background-color: navy;
+}
+
+
+
 
 /* Hamburger Menu */
 .overlay {
