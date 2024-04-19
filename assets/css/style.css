@@ -196,19 +196,22 @@ nav.navbar {
 
 /* ==== About Page ==== */
 #about .container {
-  padding-top: 6rem;
+  /* padding-top: 6rem; */
 }
 
 #about p {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
+
+/* ==== Contact Page ==== */
+
 #contact .container {
-  padding-top: 6rem;
+  /* padding-top: 6rem; */
 }
 
 #contact p {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 
@@ -223,6 +226,7 @@ nav.navbar {
   font-size: 1.2rem; */
 }
 
+/* 共通設定 */
 .github {
   background-color: #000000;
 }
@@ -292,7 +296,8 @@ nav.navbar {
 
 .overlay ul {
   margin-top: 5rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
+  padding: 0;
 }
 
 .overlay li {
@@ -320,6 +325,9 @@ nav.navbar {
   transition-delay: 0.3s;
 }
 
+.overlay.show li:nth-child(4) {
+  transition-delay: 0.4s;
+}
 
 .overlay #close {
   position: absolute;
